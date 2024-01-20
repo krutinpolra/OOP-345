@@ -18,7 +18,7 @@ namespace seneca {
     void Event::display()
     {
         std::cout << std::setw(2) << id << ". ";
-        if (eventDescription[0] == '\0') {
+        if (!eventDescription) {
             std::cout << "| No Event |\n";
         }
         else {
@@ -31,18 +31,25 @@ namespace seneca {
         }
     }
 
+    Event::~Event()
+    {
+       delete[] eventDescription;
+    }
+
     void Event::set(const char* desc)
     {
+       delete[] eventDescription;
+
         if (desc != nullptr && desc[0] != '\0') {
 
             startingTime = g_sysClock;
 
-            strncpy(eventDescription, desc, sizeof(eventDescription) - 1);
-            eventDescription[sizeof(eventDescription) - 1] = '\0';
+            eventDescription = new char[strlen(desc) + 1];
+            strcpy(eventDescription, desc);
         }
         else {
             
-            eventDescription[0] = '\0';
+           eventDescription = nullptr;
         }
     }
 }
