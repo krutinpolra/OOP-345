@@ -1,0 +1,41 @@
+// Name: KRUTIN BHARATBHAI POLRA
+// Email: kbpolra@myseneca.ca
+// StudentID: 135416220
+// Date: 19th January 2024
+
+REFLECTION:
+
+First I started the workshop by understanding it line by line then I started doing the work I knew that we have learned the Internal and External linkage so we were going to use it in the workshop so I used the concept that I did learn
+
+Internal and External Linkage:
+
+Internal Linkage: Internal linkage refers to the visibility of a variable or function within a translation unit (a single source file after pre-processing). In the provided code, the counter variable in the Event class has internal linkage. It is declared as a static member of the class, and its visibility is limited to that translation unit. It is used to assign a unique number to each instance of the Event class within the same translation unit just like an id.
+
+External Linkage: External linkage refers to the visibility of a variable or function across multiple translation units. The g_sysClock variable is declared with external linkage in the event.cpp file and is defined in the event.h file. It is used as a global clock to track the current time across the entire program.
+
+this part confused me a little bit because I did not know how should I declare and define global variable but after watching recordings and reviewing course notes I knew that I have to declare the global variable in the header file meaning in the event.h using extern keyword  and I have to define the global variable int the source but in only one source I can't define it in the multiple source file So I did a little mistake here I did define it in the header file as well 
+
+then after defining and creating class I applied rule of three first I did not apply it properly but after getting the information about steps to apply the rule of three from OOP lab I completed my half workshop. 
+steps of rule of three:
+
+1. constructor 
+ We initialize all the attributes that are used in assignment operator.
+2. we create copy constructor and assignment operator
+	I created assignment operator by following this steps
+A.	checking for self-assignment
+B.	cleaning up
+C.	creating shallow copy
+D.	moving the resource. 
+3. deleting all the dynamically allocated memory in the destructor.
+Now after finishing this implementation of the rule of three 
+Again I did small mistake by creating counter variable as a normal variable so I reviewed my notes and found out that I need to declare my counter variable as a  “STATIC” so  This means that there is only one instance of the variable shared among all objects of the class, and it retains its value between different instances of the class. This is useful for generating unique identifiers for each instance of the Event class.
+After all these I had few difficulties with display function because I was not getting the expected designed output as sample output so I watched professor fardad’s youtube playlist of oop 244 and I revise my knowledge of data manipulation concept and I was having difficulty with this part of the code 
+
+        1   std::cout << std::setfill('0') << std::setw(2) << hours << ":"
+        2      << std::setw(2) << minutes << ":"
+        3      << std::setw(2) << seconds << " => " << eventDescription << '\n';
+        4       std::cout.fill(' ');
+
+I wasn’t getting the exact output so I had to check manually after two to three times to check how it will be fit under each and every event and numbers which we are printing as a counter and event starting and ending time 
+
+Overall, understanding the concepts of internal and external linkage, static variables,data manipulation, and file management and proper memory management were crucial in implementing the Event class and the main program. The reflection also highlights the importance of adapting the class to handle dynamic memory allocation and deallocation for improved flexibility and resource management.
