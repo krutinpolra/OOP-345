@@ -1,0 +1,49 @@
+// Student Nmae: Krutin Bharatbhai Polra
+// Student ID:   135416220
+// E-mail:       kbpolra@myseneca.ca
+// Date-Of-Compeletion: 28th January 2024
+// Course: OOP345 NAA
+// I have done all the coding by myself and only copied the code that my
+// professor provided to complete my workshops and assignments.
+
+REFLECTION:
+
+First I start with the worskshop 2 and read all the documents and when I looked at the main source file I found new block of code which uses the enumeration I had never seen it before so it was new to me 
+The Enumeration (enum):
+	if (argc == 1)
+	{
+		std::cerr << "ERROR: Missing file name!\n";
+		return ExitCodes::ERR_INSUFICIENT_ARGUMENTS;
+	}
+	else if (argc != 2)
+	{
+		std::cerr << "ERROR: Too many arguments!\n";
+		return ExitCodes::ERR_TOO_MANY_ARGUMENTS;
+	}
+The code utilizes an enumeration named ExitCodes to define symbolic names for specific exit codes. Enumerations provide a way to create named constant values that can be easily understood in the context of the program. In this case, ExitCodes is used to represent different exit states, such as ALL_GOOD, ERR_INSUFFICIENT_ARGUMENTS, and ERR_TOO_MANY_ARGUMENTS. This enhances code readability by replacing numeric exit codes with descriptive names.
+
+Chrono Library and Duration Casting: 
+Since I read all the documentation of this chrono library i didn't get any error regarding the syntax however I got stuck with the casting of the end time and start time because std::chrono::time_point objects (m_endTime and m_startTime in this case), the result is a std::chrono::duration representing the time difference between them. However, the specific type of the duration depends on the clock used by the time_point objects.
+
+If we don't use duration_cast to explicitly specify the desired duration type, the result will be the default duration type associated with the clock of the time_point objects. This may lead to unexpected behavior or errors in our code if the duration type is not compatible with what we intend to do.
+
+For example, consider the following code:
+
+m_events[m_numberOfRecords].eventDuration = m_endTime - m_startTime;
+
+Here, if m_endTime and m_startTime are std::chrono::system_clock::time_point, the resulting eventDuration will be of type std::chrono::system_clock::duration. If we later try to assign or use this duration in a context that expects a different duration type, it may lead to type mismatch errors.
+
+By using duration_cast, we are explicitly specifying the desired duration type (std::chrono::nanoseconds in your case), ensuring that the resulting duration has the correct type for our application.
+
+more about chrono library:
+The <chrono> library is employed to measure time intervals accurately. The TimedEvents class uses std::chrono::steady_clock to record the start and end times of various events. The std::chrono::steady_clock::duration type represents the time duration between these two points.
+
+Move Constructor and Move Assignment Operator are utilized to efficiently transfer ownership of resources from one object to another, reducing unnecessary copying and improving performance. This is evident in the implementation of the move constructor and move assignment operator in the StringSet class, where the contents of one object are moved to another without the overhead of deep copying.
+
+
+In summary, the reflection on this code emphasizes the effective utilization of various C++ features. Enumerations enhance code clarity, the Chrono library facilitates precise time measurements, Move Constructor and Move Assignment Operator optimize resource management, and static constexpr aids in creating constants at compile-time. This code exemplifies best practices in modern C++ programming and showcases the application of OOP principles.
+
+
+
+
+
