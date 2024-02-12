@@ -1,0 +1,62 @@
+//Name:     Krutin Bharatbhai Polra
+//studentID:135416220
+//email:    kbpolra@myseneca.ca
+//Date:     8th february 2024
+//Course:   OOP345 NAA
+// I have done all the coding by myself and only copied the code 
+// that my professor provided to complete my workshops and assignments.
+
+REFLECTION:
+
+In completing this workshop, several key topics were explored, including composition and aggregation relationships, the implementations of move and copy functions, and the use of association, aggregation, and composition relations along with these functions 
+
+std::string::substr()
+std::string::find()
+std::string::erase()
+std::stoi().
+
+Firstly, let's discuss the difference between composition and aggregation in the context of the code. In a composition relationship, the Child class owns the Toy objects it contains. This is evident in the Child class, where it dynamically allocates memory for an array of pointers to Toy objects and is responsible for their deallocation in the destructor. In contrast, the ConfirmOrder class has an aggregation relationship with Toy objects. It holds a collection of pointers to Toy objects but does not own them. The Toy objects are created elsewhere and are only referenced by ConfirmOrder. This is evident in the way ConfirmOrder handles memory management – it does not delete the Toy objects in its destructor, as it does not own them.
+
+Regarding the implementations of move and copy functions, both Child and ConfirmOrder classes provide these functionalities. In the case of Child, the copy constructor, copy assignment operator, move constructor, and move assignment operator are implemented to manage the dynamic memory allocated for the array of Toy pointers. Similarly, ConfirmOrder implements these functions to handle the dynamic array of Toy pointers it holds.
+
+Throughout the code, different types of relationships are employed. In the Child class, a composition relationship is established with the array of Toy pointers, as the Child class owns and manages the memory for the Toy objects. In ConfirmOrder, an aggregation relationship is established with the array of Toy pointers, as ConfirmOrder holds references to Toy objects without owning them.
+
+The relationship between ConfirmOrder and Toy is one of aggregation. ConfirmOrder holds a collection of pointers to Toy objects but does not own them. It simply references them to perform operations such as addition and removal from the collection.
+
+Regarding the relationship between ConfirmOrder and the array of pointers, ConfirmOrder has an aggregation relationship with the array. It holds a collection of pointers to Toy objects but does not own them. It simply manages the collection and provides operations to modify it, such as addition and removal.
+
+I learned that we can read file very easily with these function 
+
+1)std::string::substr():
+This function is used to extract a substring from a given string based on a specified starting position and length.
+In the Toy class constructor, substr() is used to extract substrings representing different attributes of a toy from a string passed as an argument. For example:
+
+m_nameOfToy = toy.substr(position + 1, nextPosition - position - 1);
+
+2)std::string::find():
+This function is used to find the position of a specified substring within a given string.
+In the Toy class constructor, find() is used to locate the positions of delimiters (in this case, colons ':') to parse the input string and extract relevant information. For example:
+
+size_t position = toy.find(':');
+
+3)std::string::erase():
+This function is used to remove characters from a string, either by specifying a range or a position.
+In the Toy class constructor, erase() is used to remove leading and trailing spaces from the extracted toy name. For example:
+
+m_nameOfToy.erase(0, 1); // Remove leading space
+
+4)std::stoi():
+This function converts a string representation of an integer to its integer equivalent.
+In the Toy class constructor, stoi() is used to convert substrings representing numerical values (like order ID and number of items) from the input string to integers. For example:
+
+m_orderID = std::stoi(toy.substr(0, position));
+
+By utilizing these functions, the code efficiently manipulates strings and extracts relevant information needed for object initialization and manipulation. They are essential tools for parsing input data and handling string manipulation tasks in C++.
+
+I experienced very samll issue while writing my code in the haste i forgot to put std::fixed before printing the price and subtotal to address the issue with the extraction operator in the Child module, the code can be modified to include std::fixed before calling std::setprecision to ensure fixed-point notation is used for precision.
+
+Overall, this workshop provided valuable insights into relationships between classes, memory management, and the implementation of move and copy operations in C++. By addressing various issues and implementing functionalities, a deeper understanding of these concepts was gained.
+
+
+
+
