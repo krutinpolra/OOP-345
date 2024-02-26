@@ -1,0 +1,8 @@
+﻿  Book.cpp
+  Movie.cpp
+  SpellChecker.cpp
+  w5_p2.cpp
+  Generating Code...
+w5_p2.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl seneca::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class seneca::Collection<class seneca::Movie> const &)" (??6seneca@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBV?$Collection@VMovie@seneca@@@0@@Z) referenced in function main
+w5_p2.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl seneca::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class seneca::Collection<class seneca::Book> const &)" (??6seneca@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBV?$Collection@VBook@seneca@@@0@@Z) referenced in function main
+C:\SENECA\SEM 3\OOP-345\week 5\part 2\x64\Debug\ws.exe : fatal error LNK1120: 2 unresolved externals
