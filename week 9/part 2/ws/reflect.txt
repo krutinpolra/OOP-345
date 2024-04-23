@@ -1,0 +1,67 @@
+// Name:                   Krutin Bharatbhai Polra
+// Seneca Student ID:      135416220
+// Seneca email:           kbpolra@myseneca.ca
+// Date of completion:     31th March 2024
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+In completing this workshop, several key concepts were reinforced and new ones were introduced. Here's a detailed reflection on the topics covered:
+
+Usage of Binary Files: 
+Binary files were utilized to store and retrieve the state of the treasure map. Unlike text files, binary files store data in a compact, binary format which can be directly read into memory, providing faster read and write operations. In this workshop, binary files were used to store the rows and columns of the treasure map efficiently.
+
+Binding Functions: 
+Binding functions to their arguments is a technique used to create function objects with pre-defined arguments. In this workshop, std::bind was employed to bind the digForTreasure function with its arguments, allowing it to be passed to std::async for multithreading. This facilitated the parallel execution of digForTreasure on different parts of the treasure map.
+
+Multithreading and its Advantages:
+ Multithreading was utilized to improve the performance of the treasure map operations, such as finding treasure. By dividing the task into smaller chunks and executing them concurrently on multiple threads, the overall computation time was reduced. This workshop showcased the advantages of multithreading in terms of improved throughput and resource utilization.
+
+Futures and Packaged Tasks: 
+Futures and packaged tasks are related concepts used in asynchronous programming. In this workshop, packaged tasks were employed to encapsulate the countTreasureInRange function, which was then associated with a future. This allowed the result of each packaged task to be retrieved asynchronously once the associated thread completed its execution. Futures were then used to collect these results and calculate the total count of treasure found.
+
+std::bind and std::packaged_task: 
+std::bind is a powerful utility in C++ used to create function objects by binding arguments to a callable object. In this workshop, std::bind was used to bind the digForTreasure function with its arguments before passing it to std::async for parallel execution. On the other hand, std::packaged_task is a mechanism for packaging a task (a callable object) and obtaining a future to its result. This was utilized to create packaged tasks for each thread, enabling asynchronous execution and result retrieval.
+
+Asynchronous programming is a programming paradigm where tasks are executed independently of the main program flow. In traditional synchronous programming, tasks are executed sequentially, one after the other, blocking the program's execution until each task completes. However, in asynchronous programming, tasks can execute concurrently, allowing the program to perform other operations while waiting for certain tasks to complete.
+
+enscribe(const char* filename): 
+
+This function is responsible for writing the contents of the TreasureMap object to a binary file specified by the filename parameter. Here's the logic breakdown:
+
+It first checks if the map pointer is not null, ensuring that there is data in the TreasureMap object to write.
+It opens the file stream in binary mode with write access (std::ios::out | std::ios::binary | std::ios::trunc), creating the file if it doesn't exist or truncating it if it does.
+If the file is successfully opened, it writes the following data:
+The number of rows (rows) as a size_t type.
+The column size (colSize) as a size_t type.
+Each row of the map (map[i]) by writing the characters of the string individually.
+Finally, it closes the file stream.
+The reason for using this logic is to serialize the TreasureMap object into a binary format, allowing it to be saved to a file and later reconstructed. This enables persistence of the map data across program executions.
+
+recall(const char* filename): 
+This function is responsible for reading the contents of a binary file specified by the filename parameter and populating the current TreasureMap object with the data. Here's the logic breakdown:
+
+It opens the file stream in binary mode with read access (std::ios::in | std::ios::binary).
+If the file is successfully opened, it reads the following data:
+The number of rows (rows) into the member variable rows.
+The column size (colSize) into the member variable colSize.
+Each row of the map (map[i]) by reading the characters of the string individually.
+Finally, it closes the file stream.
+The reason for using this logic is to deserialize the data previously serialized using enscribe, reconstructing the TreasureMap object from the binary file.
+
+size_t findTreasure(char mark): 
+This function is responsible for finding the number of occurrences of a specified character (mark) in the map data using multiple threads. Here's the logic breakdown:
+
+It calculates the number of hardware threads available using std::thread::hardware_concurrency().
+It partitions the map data among the available threads by dividing the rows into chunks.
+It creates a std::packaged_task for each thread, each tasked with counting the occurrences of the specified character within its assigned chunk of rows.
+It launches a thread for each packaged task to execute concurrently.
+It joins all threads to ensure they complete execution.
+It retrieves the results from each packaged task's associated future and sums them up to get the total count of the specified character in the map.
+Overall, this workshop provided valuable insights into the practical application of multithreading, asynchronous programming, and file handling in C++. It enhanced my understanding of these concepts and their relevance in real-world scenarios, while also highlighting the importance of efficient resource utilization and performance optimization in software development.
+
+
+
+
+
+
