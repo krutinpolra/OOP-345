@@ -1,0 +1,72 @@
+// Name:                   Krutin Bharatbhai Polra
+// Seneca Student ID:      135416220
+// Seneca email:           kbpolra@myseneca.ca
+// Date of completion:     7th April 2024
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+firstly this mile stone or the final part of the project was a little bit hard for me because i am very bad at tracing things it was so hard to keep track of all the things so i had to write in a book step by step all the process and then i was able to complete this milestone or the whole project 
+
+Problem Encountered: 
+One problem encountered was with the incorrect display of serial numbers with leading zeros. This was due to improper formatting in the display function of the Station class. so i had to change it 
+and forgetting little things like std::right before the fill function just because of that i coudn't fill the serial number's space with zero infront of the number so it took me half hour to figure it out where was the mistake 
+one major problem was the implementaion of the deques it was hard for me and i struggled a lot because in the final output whole section of complete order was not able to print on console because i implemented wrong logic in the customer order module i implemeted 
+	bool CustomerOrder::isItemFilled(const std::string& itemName) const {
+		bool isFilled = true;
+		for (unsigned int i = 0; i < m_cntItem; i++) {
+			if (m_lstItem[i]->m_itemName == itemName && m_lstItem[i]->m_isFilled == false) {
+				return m_lstItem[i]->m_isFilled;
+			}
+		}
+		return isFilled;
+	}
+wrong 
+the if condition was wrong and then i figured it out by debugging that my is item filled function has logical error then i fixed it. so i hade to make some changes in the previosly built modules that's why it took me one extra day after due  
+
+Logic and Concepts Learned:
+
+Queues are data structures that follow the First-In-First-Out (FIFO) principle, where elements are inserted at the rear and removed from the front.
+In the LineManager module, queues are used to manage orders awaiting processing. The front and pop_front functions are used to retrieve and remove orders from the front of the queue, respectively.
+
+Inheritance is utilized to create a hierarchy of workstation types in the Workstation module. Base classes with common attributes and behaviors are defined, and specific workstation types inherit from these base classes.
+For example, a base class like Workstation may have derived classes such as AssemblyStation, TestingStation, etc., each specializing in different tasks.
+
+Front Function: 
+
+The front function retrieves the first element of a container (e.g., queue) without removing it. This is used to check the next order to be processed without actually removing it from the queue.
+
+Pop Front Function: 
+
+The pop_front function removes the first element of a container. This would be used to remove the order that has been processed from the queue of orders awaiting processing. It's crucial for maintaining the order of processing and ensuring that each order is processed only once.
+
+in the line manager module the constuctor took a lot of time of mine because i was very confused how to implement all the logic after some time i got it and i learnt these concepts as well some of them are familier but i became more comfortable 
+Opening the File:
+
+The constructor begins by opening the input file specified by the file parameter using an std::fstream object named FileObj.
+It checks whether the file is successfully opened.
+Reading Input from File:
+
+Inside a loop, the constructor reads each line from the input file using std::getline and stores it in the string variable str.
+Parsing the Input:
+
+For each line read from the file, the constructor checks if it contains the delimiter '|' using find('|').
+If the delimiter is found, the line is split into two parts: nameOfStation and nextNameOfStation. These represent the current and next workstation names, respectively.
+If the line does not contain the delimiter, it is assumed to represent the name of a single workstation (nameOfStation), and nextNameOfStation is left empty.
+Finding Workstation Objects:
+
+The constructor searches for the corresponding Workstation objects in the stations vector based on the names extracted from the input file.
+It uses std::find_if with a lambda function to find the workstation objects whose names match nameOfStation and nextNameOfStation.
+If a matching workstation object is found, it is added to the m_activeLine vector.
+Setting Next Workstation:
+
+For each workstation in the m_activeLine, the constructor sets its next workstation pointer (m_nextStation) based on the name of the next workstation (nextNameOfStation).
+It again uses std::find_if to locate the corresponding next workstation object in the stations vector and sets the next station pointer using setNextStation().
+Finding the First Station:
+
+After processing all lines from the input file, the constructor searches for the first station in the assembly line.
+It uses std::find_if with a lambda function to find a workstation that is not pointed to by any other workstation, indicating that it is the starting point of the assembly line.
+The found workstation is assigned as the m_firstStation.
+Counting Pending Orders:
+
+Finally, the constructor updates the count of pending customer orders (m_cntCustomerOrder) by accessing the global vector g_pending.
