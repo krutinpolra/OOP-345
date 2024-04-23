@@ -1,0 +1,37 @@
+// Name:                   Krutin Bharatbhai Polra
+// Seneca Student ID:      135416220
+// Seneca email:           kbpolra@myseneca.ca
+// Date of completion:     24th March 2024
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+
+In completing this workshop, I've reinforced my understanding of smart pointers and their advantages over raw pointers. One significant advantage of smart pointer syntax, exemplified in my code, is automatic memory management. By using smart pointers like std::unique_ptr, memory deallocation is automatically handled when the pointer goes out of scope, reducing the risk of memory leaks.
+
+In the solution, I used std::unique_ptr<Product> to manage dynamically allocated Product objects. For instance, std::unique_ptr<Product> product(new Product(desc[i].desc, price[j].price)); creates a unique pointer to a dynamically allocated Product object, ensuring proper memory management.
+
+The difference between raw and smart pointer syntax lies in memory management. Raw pointers require manual memory management, leading to potential memory leaks if not handled properly. In contrast, smart pointers handle memory deallocation automatically, reducing the risk of memory leaks and simplifying memory management.
+
+In our solution, we used smart pointer syntax to manage dynamically allocated objects safely. For instance, priceList += std::move(product); adds a Product object to the priceList using a smart pointer, ensuring proper memory management.
+
+Additionally, I utilized emplace_back function in my solution to efficiently construct objects directly in the vector. For example, list.emplace_back(*t.get()); constructs a new element in the list directly, avoiding unnecessary copies and moves.
+
+emplace_back is a member function of the std::vector container in C++, used to add elements to the end of the vector. Unlike push_back, which accepts a copy of the object to be added, emplace_back constructs the object directly within the vector by forwarding its arguments to the constructor of the object. so it is more easier to do the work
+
+While emplace_back offers significant advantages, it's important to be aware of potential drawbacks:
+
+Compiler Errors: The use of emplace_back relies heavily on the constructor signature of the object being inserted. If there is no matching constructor or if there are ambiguities in constructor overloads, the compiler may generate errors. This can make code using emplace_back harder to write and maintain, especially if the object's constructors are complex or numerous.
+
+Performance Impact for Simple Types: For simple types like built-in data types or types with trivial constructors, the performance benefits of emplace_back may be negligible compared to push_back. In such cases, the additional complexity introduced by emplace_back may not be justified.
+
+Reference Stability: Since emplace_back constructs objects in place, the memory addresses of existing elements in the vector may change when resizing occurs. This can invalidate iterators and references to elements in the vector, potentially leading to bugs if not handled properly.
+
+Less Intuitive Syntax: Compared to push_back, which simply takes an object to be copied or moved into the vector, the syntax of emplace_back with its variadic arguments may be less intuitive, especially for developers unfamiliar with its usage.
+
+Increased Code Complexity: The use of emplace_back can increase code complexity, especially when dealing with complex types or when combining it with other features like move semantics or perfect forwarding. This complexity can make code harder to understand and debug.
+
+
+in this workshop i didn't have any problem completing it was easy and shorter to write but small problem that i encountered during that i used int instead of size_t in the for loop and it can be lose of data so i had to change the int i and j to size_t i and j 
+
+Overall, through this workshop, I've deepened my understanding of smart pointer syntax and its benefits in managing dynamic memory, as well as learned efficient techniques like emplace_back for constructing objects in containers. These concepts enhance code safety, reliability, and performance.

@@ -1,0 +1,11 @@
+﻿  utilities.cpp
+C:\SENECA\SEM 3\OOP-345\week 8\part 1\ws\element.h(53,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+C:\SENECA\SEM 3\OOP-345\week 8\part 1\ws\element.h(61,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+C:\SENECA\SEM 3\OOP-345\week 8\part 1\ws\element.h(69,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+  ws.vcxproj -> C:\SENECA\SEM 3\OOP-345\week 8\part 1\ws\x64\Debug\ws.exe

@@ -1,0 +1,22 @@
+﻿  utilities.cpp
+C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\element.h(60,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\element.h(68,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\element.h(76,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+  w8_p2.cpp
+C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\element.h(60,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'w8_p2.cpp')
+  
+C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\element.h(68,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'w8_p2.cpp')
+  
+C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\element.h(76,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'w8_p2.cpp')
+  
+  Generating Code...
+  ws.vcxproj -> C:\SENECA\SEM 3\OOP-345\week 8\part 2\ws\x64\Debug\ws.exe
