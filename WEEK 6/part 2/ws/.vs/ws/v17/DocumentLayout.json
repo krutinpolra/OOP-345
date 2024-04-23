@@ -1,0 +1,273 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\College.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:College.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\college.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:college.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Student.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Student.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Professor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Professor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Professor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Professor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Utilities.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Utilities.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\College.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:College.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\w6_p2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:w6_p2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\sample_output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{42C61E81-2A2D-479E-BE2C-93D531D14DAB}|ws.vcxproj|solutionrelative:sample_output.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "w6_p2.cpp",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\w6_p2.cpp",
+              "RelativeDocumentMoniker": "w6_p2.cpp",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\w6_p2.cpp",
+              "RelativeToolTip": "w6_p2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-11T00:11:07.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Person.h",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Person.h",
+              "RelativeDocumentMoniker": "Person.h",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Person.h",
+              "RelativeToolTip": "Person.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-11T00:08:25.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Employee.h",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Employee.h",
+              "RelativeDocumentMoniker": "Employee.h",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Employee.h",
+              "RelativeToolTip": "Employee.h",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-11T00:08:26.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee.cpp",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Employee.cpp",
+              "RelativeDocumentMoniker": "Employee.cpp",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Employee.cpp",
+              "RelativeToolTip": "Employee.cpp",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAYwCoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-11T00:08:22.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "College.h",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\College.h",
+              "RelativeDocumentMoniker": "College.h",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\College.h",
+              "RelativeToolTip": "College.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-11T00:08:26.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "College.cpp",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\College.cpp",
+              "RelativeDocumentMoniker": "College.cpp",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\College.cpp",
+              "RelativeToolTip": "College.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-11T00:08:21.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Utilities.h",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Utilities.h",
+              "RelativeDocumentMoniker": "Utilities.h",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Utilities.h",
+              "RelativeToolTip": "Utilities.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-11T00:08:24.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Utilities.cpp",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Utilities.cpp",
+              "RelativeDocumentMoniker": "Utilities.cpp",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Utilities.cpp",
+              "RelativeToolTip": "Utilities.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-11T00:08:23.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Professor.h",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Professor.h",
+              "RelativeDocumentMoniker": "Professor.h",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Professor.h",
+              "RelativeToolTip": "Professor.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-11T00:08:12.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Professor.cpp",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Professor.cpp",
+              "RelativeDocumentMoniker": "Professor.cpp",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Professor.cpp",
+              "RelativeToolTip": "Professor.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-11T00:08:20.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.h",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Student.h",
+              "RelativeDocumentMoniker": "Student.h",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Student.h",
+              "RelativeToolTip": "Student.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-11T00:35:02.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cpp",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Student.cpp",
+              "RelativeDocumentMoniker": "Student.cpp",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\Student.cpp",
+              "RelativeToolTip": "Student.cpp",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-11T00:35:47.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "college.txt",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\college.txt",
+              "RelativeDocumentMoniker": "college.txt",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\college.txt",
+              "RelativeToolTip": "college.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-11T00:11:39.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "sample_output.txt",
+              "DocumentMoniker": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\sample_output.txt",
+              "RelativeDocumentMoniker": "sample_output.txt",
+              "ToolTip": "C:\\SENECA\\SEM 3\\OOP-345\\WEEK 6\\part 2\\ws\\sample_output.txt",
+              "RelativeToolTip": "sample_output.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-11T00:11:46.166Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+//Name:     Krutin Bharatbhai Polra
+//studentID:135416220
+//email:    kbpolra@myseneca.ca
+//Date:     8th March 2024
+//Course:   OOP345 NAA
+// I have done all the coding by myself and only copied the code 
+// that my professor provided to complete my workshops and assignments.
+
+Deallocating dynamically allocated memory in vectors is crucial to prevent memory leaks. In the provided solution, dynamic memory allocation is utilized in the Student class to manage the array of courses. However, it is essential to deallocate this memory in the destructor to prevent memory leaks. The destructor of the Student class correctly handles this by deallocating the memory allocated for the courses array using delete[] m_courses.
+
+The loadData() function, responsible for building objects from the input file, can detect various errors such as unknown person types or invalid data by analyzing the input data. For instance, if the input data does not match any known person type (e.g., 'E' for Employee, 'S' for Student, 'P' for Professor), or if the provided data is incomplete or invalid, the function can throw exceptions indicating the error.
+
+In this workshop, both std::list<seneca::Person*> and std::vector<seneca::Person*> are used to store collections of person pointers. Using pointers allows polymorphism, enabling storage of derived class objects in a container of base class pointers. While std::list and std::vector could theoretically be used to store objects directly, using pointers provides flexibility, especially when dealing with polymorphic behavior and avoiding object slicing. Additionally, using pointers can enhance performance when dealing with large objects or frequent insertions and deletions.Regarding the problem encountered during data extraction in the constructor, although it took time to resolve, overcoming challenges is an integral part of finishing this workshop. 
+
+I also leanred how to extract data from the file and how to store it along with removing leading and trailing spaces from the string I had to revice this concepts of removing leading and trailing spaces but i got it at the end
+also learned that how to itterate through the vector.
+
+I encountered many problems with the custome constuctor  especially regarding age because we were retuning age as a string but we are also working with age as an int so I used to convert the int into string for example in the provided code below
+
+   std::string Student::age() const
+   {
+      return std::to_string(m_age);
+   }
+in the part two I made a mistake I totally forgot to store the department which we read from the file into the m_department variable so in my final output I didn't get expected results so i had to debug it and then I found that in the below code I forgot to initialize my class member variable with the extracted string 
+
+   Professor::Professor(std::istream& in) : Employee(in) {
+
+      std::string departMent{};
+      std::getline(in, departMent, '\n');
+      departMent.erase(0, departMent.find_first_not_of(" ")); // Remove leading spaces
+      departMent.erase(departMent.find_last_not_of(" ") + 1);
+      m_department = departMent;
+   } 
